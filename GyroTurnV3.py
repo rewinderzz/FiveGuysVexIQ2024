@@ -5,7 +5,7 @@ GYRO_WEST = 180
 GYRO_SOUTH = 270
 
 def get_heading_difference(from_heading, to_heading):
-    difference = from_heading - to_heading
+    difference = to_heading - from_heading
     if difference > 180:
         return difference - 360
     if difference <= -180:
